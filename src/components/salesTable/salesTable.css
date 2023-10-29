@@ -1,0 +1,8 @@
+.salesTable {
+  width: 100%;
+  margin: 1rem;
+}
+table td th tr {
+  padding: 5rem;
+  margin: 5rem;
+}

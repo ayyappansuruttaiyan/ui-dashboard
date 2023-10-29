@@ -1,0 +1,13 @@
+.search {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  padding: 5px;
+  width: 75%;
+}
+.search span {
+  margin: 0.5rem;
+}
