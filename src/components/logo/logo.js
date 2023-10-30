@@ -1,4 +1,3 @@
-import "./logo.css";
-export function Logo() {
-  return <h3 className="logo">Medico Sales</h3>;
+export default function Logo({ brand }) {
+  return <h3>{brand}</h3>;
 }

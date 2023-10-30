@@ -1,14 +1,13 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBell } from "@fortawesome/free-regular-svg-icons";
-import "./search.css";
+import Icons from "../Icons/Icons";
+import TextInput from "../TextInput/TextInput";
 
-export function Search() {
+export default function Search() {
   return (
     <div className="search">
-      <input className="input" type="text" placeholder="Search" />
       <span>
-        <FontAwesomeIcon icon={faBell} />
+        <TextInput icon="icon" type="text" placeholder="Search" />
       </span>
+      <Icons bell="fa-solid fa-bell" />
     </div>
   );
 }

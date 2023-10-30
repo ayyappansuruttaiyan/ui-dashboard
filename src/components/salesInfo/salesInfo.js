@@ -1,33 +1,15 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import "./salesInfo.css";
-export function SalesInfo() {
+import TextInput from "../TextInput/TextInput";
+
+export default function SalesInfo({ title }) {
   return (
     <div className="salesInfo">
-      <Row>
-        <Col>
-          <h4>Sales Information</h4>
-        </Col>
-      </Row>
-
-      <Row>
-        <Col md={3}>
-          <h6>Customer</h6>
-          <input type="text" placeholder="Enter Costumer Name" />
-        </Col>
-        <Col md={3}>
-          <h6>Invoice ID</h6>
-          <input type="text" placeholder="Enter Invoice ID" />
-        </Col>
-        <Col md={3}>
-          <h6>Start Date</h6>
-          <input type="text" placeholder="Start Date" />
-        </Col>
-        <Col md={3}>
-          <h6>End Date</h6>
-          <input type="text" placeholder="End Date" />
-        </Col>
-      </Row>
+      <h3>{title}</h3>
+      <div>
+        <TextInput type="text" placeholder="Customer Name" />
+        <TextInput type="text" placeholder="Invoice ID" />
+        <TextInput type="date" placeholder="StartDate" />
+        <TextInput type="date" placeholder="EndDate" />
+      </div>
     </div>
   );
 }

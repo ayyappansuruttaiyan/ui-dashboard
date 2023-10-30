@@ -24,6 +24,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "production": [
+    "chrome >= 67",
+    "edge >= 79",
+    "firefox >= 68",
+    "opera >= 54",
+    "safari >= 14"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",

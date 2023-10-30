@@ -1,40 +1,25 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Search from "./Components/Search/Search";
+import SalesInfo from "./Components/SalesInfo/SalesInfo";
+import Table from "./Components/Table/Table";
+import data from "./Components//Data/data";
 
-import { Logo } from "./components/logo/logo";
-import { SalesInfo } from "./components/salesInfo/salesInfo";
-import { SalesTable } from "./components/salesTable/salesTable";
-import { Search } from "./components/search/search";
-import { Sidebar } from "./components/sideBar/sideBar";
-
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
-const datas = [
-  { invoice_id: "#AHGA68" },
-  { date: Date.now() },
-  { customer: "Javob" },
-  { payable_amount: 100 },
-  { paid_amount: 100 },
-  { due_amount: 0 },
-];
+import SideBar from "./Components/SideBar/SideBar";
 
 function App() {
   return (
-    <Container style={{ margin: 0, padding: 0 }}>
-      <Row>
-        <Col className="bg-color" md={3}>
-          <Logo />
-          <Sidebar />
-        </Col>
-        <Col md={9}>
+    <div className="container-fluid">
+      <div className="row ">
+        <div className="col-md-3 secondary-color ">
+          <SideBar />
+        </div>
+        <div className="col-md-9">
           <Search />
-          <SalesInfo />
-          <SalesTable invoice={datas[0]} />
-        </Col>
-      </Row>
-    </Container>
+          <SalesInfo title="Sales Information" />
+          <Table data={data} />
+        </div>
+      </div>
+    </div>
   );
 }
 
