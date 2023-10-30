@@ -1,4 +1,4 @@
-import data from "../Data/data";
+import data from "../Data/data.js";
 
 export default function Table() {
   const header = [

@@ -1,4 +1,4 @@
-import TextInput from "../TextInput/TextInput";
+import TextInput from "../TextInput/TextInput.js";
 
 export default function SalesInfo({ title }) {
   return (
