@@ -1,5 +1,5 @@
-import Icons from "../Icons/Icons.js";
-import TextInput from "../TextInput/TextInput.js";
+import Icons from "../Icons/Icons.jsx";
+import TextInput from "../TextInput/TextInput.jsx";
 
 export default function Search() {
   return (

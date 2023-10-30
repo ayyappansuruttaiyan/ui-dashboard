@@ -1,5 +1,5 @@
-import Logo from "../Logo/Logo.js";
-import Nav from "../Nav/Nav.js";
+import Logo from "../Logo/Logo.jsx";
+import Nav from "../Nav/Nav.jsx";
 
 export default function SideBar() {
   return (
