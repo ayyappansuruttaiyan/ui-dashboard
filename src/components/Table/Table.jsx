@@ -29,7 +29,7 @@ export default function Table() {
               <th>
                 <input type="checkbox" />
               </th>
-              <td>{tableData.invoice_id}</td>
+              <td key={tableData.invoice_id}>{tableData.invoice_id}</td>
               <td>{tableData.date}</td>
               <td>{tableData.customer}</td>
               <td>&#8377; {tableData.payable_amount}</td>

@@ -1,3 +1,16 @@
+import { useState } from "react";
+
 export default function TextInput({ type, placeholder }) {
-  return <input type={type} placeholder={placeholder} />;
+  const [input, setInput] = useState("");
+  console.log(input);
+  return (
+    <input
+      onChange={(e) => {
+        setInput(e.target.value);
+      }}
+      value={input}
+      type={type}
+      placeholder={placeholder}
+    />
+  );
 }
