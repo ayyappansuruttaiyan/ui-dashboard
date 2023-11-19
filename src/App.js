@@ -1,6 +1,6 @@
 // https://653f55bd9c2d71227a654e58--luxury-pavlova-32f667.netlify.app/
 import "./App.css";
-import Search from "./Components/Search/Search.jsx";
+import Search from "./Components/Search/SearchComponent.jsx";
 import SalesInfo from "./Components/SalesInfo/SalesInfo.jsx";
 import Table from "./Components/Table/Table.jsx";
 import data from "./Components/Data/data.js";
